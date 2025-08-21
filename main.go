@@ -14,10 +14,7 @@ type User struct {
 	Age  int32  `json:"age"`
 }
 
-var users = []User{
-	{Name: "John", Age: 19},
-	{Name: "Harper", Age: 20},
-}
+var users []User
 
 func userHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
